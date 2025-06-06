@@ -21,9 +21,14 @@ poetry add ../dh-education --group dev
 <pre>
 dh_education
 ├── models
-│   ├── mixins
-│   └── models
-├── schemas
-│   └── mixins
+├── main
 └── settings
 </pre>
+
+## Полезные команды 
+
+* Запуск сервера
+
+```commandline
+uvicorn dh_education.main:app --reload
+```
