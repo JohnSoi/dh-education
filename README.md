@@ -29,6 +29,15 @@ dh_education
 
 * Запуск сервера
 
-```commandline
+```bash
 uvicorn dh_education.main:app --reload
 ```
+
+* Создание миграции:  
+```bash  
+poetry run alembic revision --autogenerate -m "Create contact table"
+```
+
+*Обновление БД:  
+```bash  
+poetry run alembic upgrade head
