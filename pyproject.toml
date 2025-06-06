@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "dh-education"
+version = "0.1.0"
+description = ""
+authors = ["JohnSoi <un.perso@yandex.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+#dh-platform = {git = "https://github.com/JohnSoi/dh-platform.git"}
+fastapi = "^0.115.12"
+uvicorn = "^0.34.3"
+
+[tool.poetry.group.dev.dependencies]
+dh-platform = {path = "../dh-platform"}
+
+
+[tool.poetry.group.docs.dependencies]
+sphinx = "^8.2.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
