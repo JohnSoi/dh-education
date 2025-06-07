@@ -13,14 +13,16 @@ alembic = "^1.16.1"
 asyncpg = "^0.30.0"
 
 [tool.poetry.group.dh.dependencies]
-#dh-platform = {git = "https://github.com/JohnSoi/dh-platform.git"}
-#dh-access = {git = "https://github.com/JohnSoi/dh-access.git"}
-#dh-users = {git = "https://github.com/JohnSoi/dh-users.git"}
+dh-platform = {git = "https://github.com/JohnSoi/dh-platform.git"}
+dh-access = {git = "https://github.com/JohnSoi/dh-access.git"}
+dh-users = {git = "https://github.com/JohnSoi/dh-users.git"}
 
 [tool.poetry.group.dev.dependencies]
-dh-platform = {path = "../dh-platform"}
-dh-access = {path = "../dh-access"}
-dh-users = {path = "../dh-users"}
+pydevd-pycharm = "^242.23339.19"
+black = "^25.1.0"
+isort = "^6.0.1"
+pyright = "^1.1.401"
+pylint = "^3.3.7"
 
 [tool.poetry.group.docs.dependencies]
 sphinx = "^8.2.3"
