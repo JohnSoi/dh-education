@@ -21,6 +21,7 @@ poetry add ../dh-education --group dev
 <pre>
 dh_education
 ├── models
+├── consts
 ├── main
 └── settings
 </pre>
