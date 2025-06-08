@@ -16,6 +16,7 @@ asyncpg = "^0.30.0"
 dh-platform = {git = "https://github.com/JohnSoi/dh-platform.git"}
 dh-access = {git = "https://github.com/JohnSoi/dh-access.git"}
 dh-users = {git = "https://github.com/JohnSoi/dh-users.git"}
+dh-contacts = {git = "https://github.com/JohnSoi/dh-contacts.git"}
 
 [tool.poetry.group.dev.dependencies]
 pydevd-pycharm = "^242.23339.19"
@@ -32,3 +33,6 @@ sphinx-copybutton = "^0.5.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = "too-few-public-methods"

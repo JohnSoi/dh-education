@@ -42,3 +42,4 @@ poetry run alembic revision --autogenerate -m "Create contact table"
 *Обновление БД:  
 ```bash  
 poetry run alembic upgrade head
+```
