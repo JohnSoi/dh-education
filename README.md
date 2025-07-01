@@ -39,7 +39,7 @@ uvicorn dh_education.main:app --reload
 poetry run alembic revision --autogenerate -m "Create contact table"
 ```
 
-*Обновление БД:  
+* Обновление БД:  
 ```bash  
 poetry run alembic upgrade head
 ```

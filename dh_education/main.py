@@ -6,7 +6,9 @@ __author__: str = "Старков Е.П."
 from contextlib import asynccontextmanager
 
 from dh_access.initializers import role_init, access_event_subscribe
+from dh_access.routes import auth_routes
 from dh_contacts.initializers import contacts_event_subscribe
+from dh_contacts.routes import contact_routes
 from dh_platform.logging import log_requests, setup_logging
 from dh_users.routes import user_routes
 from fastapi import FastAPI
@@ -34,4 +36,6 @@ app: FastAPI = FastAPI(
 )
 
 app.include_router(user_routes)
+app.include_router(auth_routes)
+app.include_router(contact_routes)
 app.middleware("http")(log_requests)
